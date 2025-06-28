@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced To-Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-tasks"></i>To-Do List</h1>
+            <div class="stats">
+                <span id="total-tasks">0 tasks</span>
+                <span id="completed-tasks">0 completed</span>
+            </div>
+        </header>
+
+        <div class="input-section">
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Add a new task..." required>
+                <input type="date" id="task-date">
+                <select id="task-priority">
+                    <option value="low">Low Priority</option>
+                    <option value="medium" selected>Medium Priority</option>
+                    <option value="high">High Priority</option>
+                </select>
+                <button type="submit" id="add-btn"><i class="fas fa-plus"></i> Add</button>
+            </form>
+        </div>
+
+        <div class="controls">
+            <button id="filter-all" class="active">All</button>
+            <button id="filter-active">Active</button>
+            <button id="filter-completed">Completed</button>
+            <button id="clear-completed">Clear Completed</button>
+            <button id="clear-all">Clear All</button>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search tasks...">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <ul id="task-list"></ul>
+
+        <div class="sort-options">
+            <span>Sort by:</span>
+            <select id="sort-by">
+                <option value="added">Date Added</option>
+                <option value="due">Due Date</option>
+                <option value="priority">Priority</option>
+                <option value="alphabetical">Alphabetical</option>
+            </select>
+            <select id="sort-direction">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="notification" class="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
