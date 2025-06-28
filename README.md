@@ -1,6 +1,5 @@
-# 📝 Advanced To-Do List Web App
-
-![Project Screenshot](to-do list.png) 
+# 📝 To-Do List Web App 
+**Built for [CodeAlpha](https://www.codealpha.tech/) Web Development Internship**  
 
 A feature-rich task management web application built with **HTML, CSS, and JavaScript** for the CodeAlpha internship program.
 
