@@ -19,6 +19,8 @@ A feature-rich task management web application built with **HTML, CSS, and JavaS
 - **Icons:** [Font Awesome](https://fontawesome.com/)
 - **Version Control:** Git/GitHub
 
+Live demo: https://ayesha-emaan.github.io/CodeAlpha_ToDoList/
+
 ## 🖥️ How to Run Locally
 
 1. Clone the repository:
